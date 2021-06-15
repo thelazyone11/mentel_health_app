@@ -308,11 +308,21 @@ class _ResultScreenState extends State<ResultScreen> {
               height: MediaQuery.of(context).size.height * 0.05,
             ),
             Container(
-              height: MediaQuery.of(context).size.height * 0.5,
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text("Instruction:",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15,
+                      fontFamily: ''),
+                  textAlign: TextAlign.left),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.4,
               padding: EdgeInsets.all(20),
               child: Text(
-                "Instruction:\nKeep the habit of meditating and exercising regularly.\n\nTake good care of yourself. Get enough sleep and eat well.\n\nReach out to family and friends when times get hard.\n\nKeep yourself surrounded with positive people.\n\nGet regular medical checkups, and see your provider if you don’t feel right.\n\nGet help if you think you’re depressed. If you wait, it could get worse.",
-                style: TextStyle(fontSize: 15, fontFamily: ''),
+                "Keep the habit of meditating and exercising regularly.\n\nTake good care of yourself. Get enough sleep and eat well.\n\nReach out to family and friends when times get hard.\n\nKeep yourself surrounded with positive people.\n\nGet regular medical checkups, and see your provider if you don’t feel right.\n\nGet help if you think you’re depressed. If you wait, it could get worse.",
+                style: TextStyle(fontSize: 14, fontFamily: ''),
                 textAlign: TextAlign.left,
               ),
             )
